@@ -1,0 +1,207 @@
+/* Ogólne style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-image: url('bg.jpg'); /* Tło całej strony jako obraz */
+    background-size: cover; /* Pokrywa całą przestrzeń */
+    background-position: center; /* Ustawienie obrazu w centrum */
+    background-attachment: fixed; /* Tło nie przesuwa się przy przewijaniu */
+    color: #444;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.3); /* Lekka przezroczystość dla nagłówka, żeby obrazek był widoczny */
+    color: white;
+    text-align: center;
+    padding: 10% 5%;
+    position: relative;
+    overflow: hidden;
+    transition: background-image 1s ease-in-out; /* Płynna zmiana tła */
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Przyciemnienie tła */
+    z-index: 1;
+}
+
+.header-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Cień dla lepszej widoczności */
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Cień dla lepszej widoczności */
+}
+
+/* Sekcje */
+main {
+    padding: 5%;
+    text-align: center;
+}
+
+#about, #menu, #contact {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #fff; /* Jaśniejszy kolor dla nagłówków */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Cień dla lepszej widoczności */
+}
+
+/* Sekcja O nas i Nasze menu */
+#about, #menu {
+    background: rgba(0, 0, 0, 0.6); /* Przyciemnione tło, by tekst był lepiej widoczny */
+    color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+/* Kolor tekstu w ofercie */
+#menu .item-details h3, #menu .item-details p {
+    color: #333; /* Ciemniejszy kolor tekstu w ofercie */
+}
+
+/* Kolor ceny w ofercie */
+.price {
+    color: #ff8c00; /* Pomarańczowy kolor dla ceny */
+}
+
+/* Usunięcie punktów w liście kontaktu */
+#contact ul {
+    list-style: none; /* Usuwamy punktory */
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#contact li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333; /* Kolor tekstu */
+}
+
+/* Linki w sekcji kontakt */
+#contact a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Tło sekcji kontakt */
+#contact {
+    background: rgba(255, 255, 255, 0.8); /* Białe, lekko przezroczyste tło */
+    color: #333;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+/* Sekcja Menu */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Sekcja Menu */
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Lekkie unoszenie oferty */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item-details h3 {
+    font-size: 1.6em;
+    margin: 10px 0;
+}
+
+.item-details p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Przyciski */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e07b00;
+    opacity: 1; /* Zwiększenie widoczności przy hover */
+}
+
+/* Przyciski w nagłówku */
+header .cta-button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+    background-color: #e07b00;
+}

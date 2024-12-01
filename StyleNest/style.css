@@ -1,0 +1,236 @@
+/* Ogólne style */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Nagłówek z animowanym gradientem */
+header {
+    background: linear-gradient(45deg, #ff4c60, #ff6f7d, #ff9c9c); /* Poprzedni kolor gradientu */
+    background-size: 400% 400%;
+    animation: gradientBG 6s ease-in-out infinite; /* Skrócenie czasu animacji i płynniejsza zmiana */
+    color: white;
+    text-align: center;
+    padding: 20% 5%;
+}
+
+.header-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 6vw;
+    margin: 0;
+}
+
+header p {
+    font-size: 2vw;
+    margin: 5% 0;
+}
+
+.cta-button {
+    background-color: #ff6f7d; /* Czerwony kolor */
+    color: white;
+    padding: 2% 4%;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2vw;
+}
+
+.cta-button:hover {
+    background-color: #ff4c60; /* Jaśniejszy czerwony na hover */
+}
+
+/* Animacja gradientu */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Sekcje */
+main {
+    padding: 5%;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+#about {
+    text-align: center;
+}
+
+#products {
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background: white;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-link {
+    color: #ff4c60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+}
+
+/* Style dla podstron */
+#black-dress {
+    background: #f9f9f9;
+    padding: 5%;
+    text-align: center;
+}
+
+#black-dress h2 {
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+#black-dress img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#black-dress p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#black-dress .price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#black-dress .cta-button {
+    background-color: #ff6347;
+    font-size: 1.2em;
+}
+
+#black-dress .cta-button:hover {
+    background-color: #ff7f50;
+}
+
+/* Style dla podstrony Biała Koszula */
+#white-shirt {
+    background: #f9f9f9;
+    padding: 5%;
+    text-align: center;
+}
+
+#white-shirt h2 {
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+#white-shirt img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#white-shirt p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#white-shirt .price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#white-shirt .cta-button {
+    background-color: #ff6347;
+    font-size: 1.2em;
+}
+
+#white-shirt .cta-button:hover {
+    background-color: #ff7f50;
+}
+
+/* Style dla podstrony Jeansy Slim Fit */
+#jeans-slim {
+    background: #f9f9f9;
+    padding: 5%;
+    text-align: center;
+}
+
+#jeans-slim h2 {
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+#jeans-slim img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#jeans-slim p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#jeans-slim .price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#jeans-slim .cta-button {
+    background-color: #ff6347;
+    font-size: 1.2em;
+}
+
+#jeans-slim .cta-button:hover {
+    background-color: #ff7f50;
+}
